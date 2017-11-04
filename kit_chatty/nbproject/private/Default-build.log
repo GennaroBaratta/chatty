@@ -1,0 +1,2 @@
+gcc -std=c99 -Wall -pedantic -g -DMAKE_VALGRIND_HAPPY -I.  -L. -o chatty chatty.o libchatty.a connections.h message.h ops.h stats.h config.h tpool.h hashmap.h parsing.h -pthread
+gcc -std=c99 -Wall -pedantic -g -DMAKE_VALGRIND_HAPPY -I.  -L. -o client client.o connections.o message.h -pthread
